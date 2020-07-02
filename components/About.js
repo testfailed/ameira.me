@@ -24,18 +24,12 @@ export default function About() {
           // className={cn('shadow-small', {
           //   'hover:shadow-medium transition-shadow duration-200': slug,
           // })}
-          className="absolute z-0"
-          style={{
-            width: '110%',
-            maxWidth: '110%',
-            height: '110%',
-            objectFit: 'cover',
-          }}
+          className="absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
         />
         </div>
-        <div className="mt-16 w-full bg-gray-200 p-10 h-full z-10" style={{ fontFamily: 'Raleway, serif' }}>
-          <h2 style={{ fontFamily: 'Playfair Display, serif' }} className="text-6xl">About Me</h2>
-          {aboutText.map((paragraph, index) => <p className="py-4 leading-loose" key={index}>{paragraph}</p>)}
+        <div className="mt-16 w-full bg-gray-200 p-10 h-full z-10">
+          <h2 className="text-6xl font-title">About Me</h2>
+          {aboutText.map((paragraph, index) => <p className="py-4 leading-loose font-body" key={index}>{paragraph}</p>)}
         </div>
       </div>
     </section>

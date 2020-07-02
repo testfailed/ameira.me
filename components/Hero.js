@@ -1,11 +1,8 @@
 export default function Hero() {
   return (
     <section>
-      <div className="w-screen h-screen bg-fixed flex justify-center items-center flex-col" style={{ 
+      <div className="w-screen h-screen bg-fixed flex justify-center items-center flex-col font-title bg-cover bg-top" style={{ 
         backgroundImage: `url('${process.env.BACKEND_URL}/assets/home/header-background.jpg')`,
-        backgroundPosition: 'top',
-        backgroundSize: 'cover',
-        fontFamily: 'Playfair Display, serif'
       }} >
         <h1 className="text-center text-7xl block">Ameira Yanni</h1>
         <p className="block mt-5 mb-20 flex items-center text-xl">

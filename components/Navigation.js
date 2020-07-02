@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import EmailLink from '../components/EmailLink'
+import ExternalLink from '../components/ExternalLink'
+import SocialIcons from '../components/SocialIcons'
 
 const pages = [
   {
@@ -14,14 +16,6 @@ const pages = [
     name: 'Portfolio',
     href: '/',
   },
-  {
-    name: 'CV',
-    href: '/',
-  },
-  {
-    name: 'Contact',
-    href: '/',
-  },
 ]
 
 export default function Navigation() {
@@ -31,12 +25,20 @@ export default function Navigation() {
         <EmailLink />
       </div>
       <div className="flex justify-end w-full">
-        <ul className="p-4 bg-opacity-75 bg-white">
+        <ul className="p-4 bg-opacity-75 bg-white flex justify-center items-center">
           {pages.map(({ name, href }) => <li className="inline-block px-3 tracking-wider" key={name}>
             <Link href={`${process.env.BACKEND_URL}${href}`}>
               <a aria-label={name}>{name}</a>
             </Link>
           </li>)}
+          <li className="inline-block px-3 tracking-wider">
+            <ExternalLink aria-label="CV" href={`${process.env.BACKEND_URL}/assets/AmeiraCV.pdf`}>
+              CV
+            </ExternalLink>
+          </li>
+          <li className="inline-block px-1">
+            <SocialIcons />
+          </li>
         </ul>
       </div>
     </nav>

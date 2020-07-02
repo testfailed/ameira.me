@@ -7,6 +7,8 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Hero from '../components/Hero'
+import About from '../components/About'
+import Portfolio from '../components/Portfolio'
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0]
@@ -15,22 +17,12 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Ameira Yanni</title>
         </Head>
         <Hero />
         <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <About />
+          <Portfolio />
         </Container>
       </Layout>
     </>

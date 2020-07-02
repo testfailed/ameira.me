@@ -1,14 +1,12 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import EmailLink from '../components/EmailLink'
+import SocialIcons from '../components/SocialIcons'
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
-      <Container>
-        <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-          Footer.
-        </h3>
-      </Container>
+    <footer className="w-full flex justify-center items-center flex-col" style={{ fontFamily: 'Raleway, serif' }}>
+        <EmailLink className="p-4" />
+        <SocialIcons />
+        <p className="m-8">&copy;	Designed by Ameira Yanni, Created by <a href="https://wallis.dev">James</a></p>
     </footer>
   )
 }

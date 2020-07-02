@@ -6,7 +6,7 @@ export default function Hamburger({ onClick }) {
     )
   }
   return (
-    <div onClick={onClick} className="fixed z-50 h-14 w-14 top-0 right-0 m-4 bg-opacity-nav bg-white flex flex-col justify-center items-center">
+    <div onClick={onClick} className="fixed md:hidden z-50 h-14 w-14 top-0 right-0 m-4 bg-opacity-nav bg-white flex flex-col justify-center items-center">
       {hamburger}
     </div>
   )

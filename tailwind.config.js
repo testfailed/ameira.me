@@ -18,6 +18,10 @@ module.exports = {
         'p-item': '450px',
       },
       backgroundColor: {
+        'pink-custom': '#DBC8BE',
+        'grey-custom': '#F7F7F7',
+      },
+      textColor: {
         'pink-custom': '#DBC8BE'
       },
       backgroundOpacity: {

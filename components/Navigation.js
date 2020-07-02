@@ -26,11 +26,11 @@ export default function Navigation() {
   const showMenu = () => setDisplay(true);
   const hideMenu = () => setDisplay(false);
 
-  const cssDisplay = display ? '' : 'hidden';
+  const cssDisplay = display ? 'flex' : 'hidden';
   return (
     <>
       <Hamburger onClick={showMenu} />
-      <nav className={`${cssDisplay} fixed w-screen h-screen md:w-full md:h-auto flex justify-center items-center pt-8 pb-8 md:pr-12 text-lg z-50 font-nav flex-col-reverse md:flex-row bg-opacity-1 md:bg-opacity-0 bg-white`}>
+      <nav className={`${cssDisplay} md:flex fixed w-screen h-screen md:w-full md:h-auto justify-center items-center pt-8 pb-8 md:pr-12 text-lg z-50 font-nav flex-col-reverse md:flex-row bg-opacity-1 md:bg-opacity-0 bg-white`}>
         <Cross onClick={hideMenu} />
         <div className="md:ml-12 p-4 bg-opacity-0 md:bg-opacity-nav bg-white tracking-wider justify-center md:justify-left">
           <EmailLink />

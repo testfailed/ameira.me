@@ -12,24 +12,30 @@ const aboutText = [
 ];
 
 const aboutImage = '/assets/home/ameira.jpg'
+const aboutImageMobile = '/assets/home/ameira-garden.jpg'
 
 export default function About() {
   return (
     <section>
-      <div className="flex w-full my-32">
+      <div className="flex w-full my-0 md:my-32 flex-col md:flex-row">
         <div className="w-full relative">
-        <img
-          src={`${process.env.BACKEND_URL}${aboutImage}`}
-          alt={`Cover Image for`}
-          // className={cn('shadow-small', {
-          //   'hover:shadow-medium transition-shadow duration-200': slug,
-          // })}
-          className="absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
-        />
+          <img
+            src={`${process.env.BACKEND_URL}${aboutImage}`}
+            alt={`Cover Image for`}
+            // className={cn('shadow-small', {
+            //   'hover:shadow-medium transition-shadow duration-200': slug,
+            // })}
+            className="hidden md:block absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
+          />
         </div>
-        <div className="mt-16 w-full bg-gray-200 p-10 h-full z-10">
-          <h2 className="text-6xl font-title">About Me</h2>
-          {aboutText.map((paragraph, index) => <p className="py-4 leading-loose font-body" key={index}>{paragraph}</p>)}
+        <div className="mt-16 w-full bg-grey-custom p-10 h-full z-10">
+          <h2 className="text-6xl font-title mb-2 md:mb-0">About Me</h2>
+          <img
+            src={`${process.env.BACKEND_URL}${aboutImageMobile}`}
+            alt={`Cover Image for`}
+            className="md:hidden object-cover mb-2 md:mb-2"
+          />
+          {aboutText.map((paragraph, index) => <p className="py-2 md:py-4 leading-loose font-body" key={index}>{paragraph}</p>)}
         </div>
       </div>
     </section>

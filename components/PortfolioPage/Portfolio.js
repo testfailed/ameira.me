@@ -1,14 +1,34 @@
+import { useEffect, useState } from 'react'
 import PortfolioItem from './PortfolioItem'
 
 export default function Portfolio({ articles }) {
   const itemsArr = [...articles, ...articles, ...articles, ...articles];
+  const [numItemsOnRow, setNumItemsOnRow] = useState(0);
+
+  useEffect(() => {
+    const num = calculateNumItemsOnRow(window.innerWidth);
+    setNumItemsOnRow(num);
+  }, [])
   return (
     <section>
       <div className="flex flex-row flex-wrap justify-center flex-1">
         {itemsArr.map((article, index) => {
-          return <PortfolioItem key={`portfolio-item-${index}`} {...article} />
+          const onTopRow = index < numItemsOnRow;
+          return <PortfolioItem key={`portfolio-item-${index}`} onTopRow={onTopRow} {...article} />
         })}
       </div>
     </section>
   )
+}
+
+const calculateNumItemsOnRow = (windowWidth) => {
+  if (windowWidth >= 1024) {
+    return 3
+  }
+
+  if (windowWidth >= 768) {
+    return 2
+  }
+
+  return 1
 }

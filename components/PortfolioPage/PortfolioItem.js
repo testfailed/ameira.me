@@ -20,8 +20,9 @@ const transition = {
 }
 
 export default function PortfolioItem(props) {
-  const { image, title, date, description, excerpt, slug } = props;
-  const [viewRef, animate, setAnimationHasRun] = useAnimationOnScroll('show');
+  const { image, title, date, description, excerpt, slug, onTopRow } = props;
+  const scrollThreshold = onTopRow ? 0 : 0.5;
+  const [viewRef, animate, setAnimationHasRun] = useAnimationOnScroll('show', scrollThreshold);
   return (
     <div ref={viewRef} className="flex flex-col lg:w-33% md:w-50% p-1" >
       <motion.div

@@ -6,10 +6,19 @@ image: "kitchen-sink-logo.jpg"
 date: "2020-06-10T00:00:00"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Nadine Shah’s fourth album, Kitchen Sink, powerfully encompasses the pressures that society places on women - touching on catcalling, gaslighting and infantilisation. Throughout Kitchen Sink, the female characters who drive the narrative often regain the power in a celebratory manner which is carried with poignant and occasionally satirical lyrics, accompanied with upbeat tones and vibrancy. Kitchen Sink may appear to fit a niche, but there is no doubt you will find your own connection to Kitchen Sink.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
 
-## Lorem Ipsum
+The album opens with ‘Club Cougar’, an instant bop. The song circles an unctuous man who makes the false assumption that the protagonist is an older woman on the prowl. In reality, they are the same age and the lavish music fits hand-in-hand with her utter repulsion of him. The sultry score and animal howls combined with her refusal to bite is an absolute vibe. 
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+
+‘Trad’ is the ultimate feminist anthem. The lyrics “Shave my legs / freeze my eggs” are welcomed with an eerie instrumental. Shah sings about the pressures of an ageing woman. The tempo and melodic structure follow Shah in her panicked race against societies clock. 
+
+
+‘Kite’ sits in the middle of the album, a bold tempo change from ‘Buckfast’ and ‘Kitchen Sink’. ‘Kite’ does as a kite should, it glides through your speakers and acts as a moment of peace and reflection. The steady beat, high melodic trills and chimes allow you to fall into an almost meditative state, subconsciously absorbing the true meaning behind the lyrics in the previous songs. 
+
+
+The penultimate track, ‘Walk’, follows the protagonist as she walks down a street, facing the sexist reality we live in. With lyrics like “Running gauntlets / Swerving perverts” and “Nasty surprise / More prying eyes”, Shah paints an all too familiar picture for many. These lyrics jump over scatty percussion, emanating the feeling of dodging people as you speed walk down a dark street. 
+
+
+Kitchen Sink reflects a familiar world but through Shah’s eyes. A vision with a desire to both entertain and unsettle the listener. With pulsing guitar strums, electronic trills and unorthodox rhythmic patterns, Shah portrays a suspended reality. Revealing her view of life, she exposes everything and the kitchen sink. 

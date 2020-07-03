@@ -32,8 +32,6 @@ export default function PortfolioItem(props) {
         onAnimationComplete={setAnimationHasRun}
         className="flex flex-col h-full"
       >
-        {/* backgroundImage: `url('${require('./images/home/header-background.jpg')}')`, */}
-        {/* `url('${process.env.BACKEND_URL}/assets/portfolio/${image}')` */}
         <div className="bg-center bg-cover h-50vh relative" style={{ backgroundImage: `url('${require(`../../images/portfolio/${image}`)}')` }}>
           <div className="absolute top-0 left-0 bg-img-tint h-full w-full flex justify-center items-center">
             <h4 className="text-2xl p-2 md:px-16 font-title text-center text-white">{title}</h4>

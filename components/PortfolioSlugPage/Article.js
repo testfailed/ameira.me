@@ -3,7 +3,6 @@ import DateFormatter from '../Generic/DateFormatter'
 import PrintMarkdownHTML from '../Generic/PrintMarkdownHTML'
 
 export default function Article({ title, image, date, content }) {
-  // const imgSrc = `${process.env.BACKEND_URL}/assets/portfolio/${image}`;
   const imgSrc = require(`../../images/portfolio/${image}`);
   return (
     <article className="flex flex-col items-center justify-center text-center pt-6 md:pt-32">

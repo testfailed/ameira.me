@@ -38,12 +38,12 @@ export default function PortfolioItem(props) {
             <h4 className="text-2xl p-2 md:px-16 font-title text-center text-white">{title}</h4>
           </div>
         </div>
-        <div className="w-full flex items-center justify-top flex-col text-center bg-grey-custom pb-16 md:pb-32 flex-1 relative">
-          <p className="text-base md:text-lg font-title py-8">
+        <div className="w-full flex items-center justify-top flex-col text-center bg-grey-custom pb-12 md:pb-32 flex-1 relative">
+          <p className="text-base md:text-lg font-title pb-2 pt-4 md:pt-6 md:pb-4">
             <DateFormatter dateString={date} />
           </p>
-          <p className="text-base md:text-lg font-body p-4 md:px-6 lg:px-8">{description}</p>
-          <p className="text-base md:text-lg font-body p-4 md:px-6 lg:px-8">'{excerpt}'</p>
+          <p className="text-base md:text-lg font-body py-2 md:py-3 px-4 md:px-6 lg:px-8">{description}</p>
+          <p className="text-base md:text-lg font-body py-2 md:py-3 px-4 md:px-6 lg:px-8">'{excerpt}'</p>
           <ReadMore slug={slug} className="md:absolute md:bottom-0 md:mb-16 border-pink-custom text-pink-custom hover:text-grey-custom hover:bg-pink-custom" />
         </div>
       </motion.div>

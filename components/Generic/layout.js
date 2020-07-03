@@ -8,9 +8,7 @@ export default function Layout({ children }) {
   const { query } = useRouter()
 
   useEffect(() => {
-    console.log(query);
     if (query && query.scrollTo) {
-      console.log(query);
       const { scrollTo } = query;
       scrollToElement(scrollTo)
     }

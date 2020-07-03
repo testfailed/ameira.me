@@ -8,8 +8,8 @@ module.exports = withPlugins([
     /* config for next-optimized-images */
   }],
 ], {
-  assetPrefix: isProd ? '/ameira.me/' : '',
+  assetPrefix: isProd ? '' : '',
   env: {
-    BACKEND_URL: isProd ? '/ameira.me' : '',
+    BACKEND_URL: isProd ? '' : '',
   },
 });

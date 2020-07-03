@@ -15,6 +15,7 @@ deploy:
   skip_cleanup: true
   github_token: $github_token
   local_dir: out
+  fqdn: ameira.me
   on:
     branch: master
 notifications:

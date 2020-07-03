@@ -1,3 +1,5 @@
+import AboutImage from './AboutImage'
+import AboutText from './AboutText'
 
 const aboutText = [
   'I have been a tour guide, a terrible waitress and a children’s party entertainer. \
@@ -14,29 +16,17 @@ const aboutText = [
 const aboutImage = '/assets/home/ameira.jpg'
 const aboutImageMobile = '/assets/home/ameira-garden.jpg'
 
-export default function About({ scrollRef }) {
+const transition = {
+  ease: 'easeOut',
+  duration: 0.5
+}
+
+export default function About() {
   return (
-    <section ref={scrollRef}>
+    <section id="about">
       <div className="flex w-full my-0 md:py-32 flex-col md:flex-row">
-        <div className="w-full relative">
-          <img
-            src={`${process.env.BACKEND_URL}${aboutImage}`}
-            alt={`Cover Image for`}
-            // className={cn('shadow-small', {
-            //   'hover:shadow-medium transition-shadow duration-200': slug,
-            // })}
-            className="hidden md:block absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
-          />
-        </div>
-        <div className="pt-12 mt-5 md:mt-12 w-full bg-grey-custom px-10 pb-10 h-full z-10">
-          <h2 className="text-6xl font-title mb-2 md:mb-0">About Me</h2>
-          <img
-            src={`${process.env.BACKEND_URL}${aboutImageMobile}`}
-            alt={`Cover Image for`}
-            className="md:hidden object-cover mb-2 md:mb-2"
-          />
-          {aboutText.map((paragraph, index) => <p className="py-2 md:py-4 leading-loose font-body" key={index}>{paragraph}</p>)}
-        </div>
+        <AboutImage image={aboutImage} transition={transition} />
+        <AboutText image={aboutImageMobile} transition={transition} content={aboutText} />
       </div>
     </section>
   )

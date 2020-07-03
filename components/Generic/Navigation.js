@@ -5,7 +5,7 @@ import SocialIcons from './SocialIcons'
 import Hamburger from './Hamburger'
 import Cross from './Cross'
 
-export default function Navigation({ scrollToAbout }) {
+export default function Navigation() {
   const links = [
     {
       text: 'Home',
@@ -13,7 +13,8 @@ export default function Navigation({ scrollToAbout }) {
     },
     {
       text: 'About',
-      onClick: scrollToAbout,
+      scrollTo: 'about',
+      href: '/'
     },
     {
       text: 'Portfolio',

@@ -14,10 +14,10 @@ const aboutText = [
 const aboutImage = '/assets/home/ameira.jpg'
 const aboutImageMobile = '/assets/home/ameira-garden.jpg'
 
-export default function About() {
+export default function About({ scrollRef }) {
   return (
-    <section>
-      <div className="flex w-full my-0 md:my-32 flex-col md:flex-row">
+    <section ref={scrollRef}>
+      <div className="flex w-full my-0 md:py-32 flex-col md:flex-row">
         <div className="w-full relative">
           <img
             src={`${process.env.BACKEND_URL}${aboutImage}`}
@@ -28,7 +28,7 @@ export default function About() {
             className="hidden md:block absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
           />
         </div>
-        <div className="mt-16 w-full bg-grey-custom p-10 h-full z-10">
+        <div className="pt-12 mt-5 md:mt-12 w-full bg-grey-custom px-10 pb-10 h-full z-10">
           <h2 className="text-6xl font-title mb-2 md:mb-0">About Me</h2>
           <img
             src={`${process.env.BACKEND_URL}${aboutImageMobile}`}

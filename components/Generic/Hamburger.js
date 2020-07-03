@@ -2,7 +2,7 @@ export default function Hamburger({ onClick }) {
   let hamburger = [];
   for (let i = 0; i < 3; i++) {
     hamburger.push(
-      <span className="bg-pink-custom w-8 h-1 my-1" />
+      <span key={`hamburger-${i}`} className="bg-pink-custom w-8 h-1 my-1" />
     )
   }
   return (

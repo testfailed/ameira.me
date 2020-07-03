@@ -1,5 +1,5 @@
 import { FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import ExternalLink from '../components/ExternalLink';
+import ExternalLink from './ExternalLink';
 
 const socials = [
   {

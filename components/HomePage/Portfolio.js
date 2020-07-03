@@ -1,4 +1,4 @@
-import PortfolioItem from '../components/PortfolioItem'
+import PortfolioItem from './PortfolioItem'
 
 const items = [
   {
@@ -24,7 +24,7 @@ export default function Portfolio() {
         <h3 className="text-7xl">Portfolio</h3>
         <p className="text-lg my-8">Past. Present. Future.</p>
         {items.map(({ name, date, description, quote, imgSrc }, index) => {
-          return <PortfolioItem name={name} date={date} description={description} quote={quote} imgSrc={imgSrc} invert={index % 2 === 1} />
+          return <PortfolioItem key={`portfolio-item-${index}`} name={name} date={date} description={description} quote={quote} imgSrc={imgSrc} invert={index % 2 === 1} />
         })}
       </div>
     </section>

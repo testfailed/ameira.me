@@ -5,6 +5,8 @@ module.exports = {
       width: {
         'overlap': '110%',
         '14': '3.5rem',
+        '33%': '33%',
+        '50%': '50%',
       },
       maxWidth: {
         'overlap': '110%',
@@ -13,13 +15,16 @@ module.exports = {
         overlap: '110%',
         'p-item': '60vh',
         '14': '3.5rem',
+        '50vh': '50vh',
       },
       minHeight: {
         'p-item': '450px',
+        '1/2': '50vh',
       },
       backgroundColor: {
         'pink-custom': '#DBC8BE',
         'grey-custom': '#F7F7F7',
+        'img-tint': 'rgba(0, 0, 0, 0.7);',
       },
       textColor: {
         'pink-custom': '#DBC8BE'

@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     <>
       <Navigation />
       <div className="min-h-screen">
-        <main>{children}</main>
+        <main className="overflow-hidden">{children}</main>
       </div>
       <Footer />
     </>

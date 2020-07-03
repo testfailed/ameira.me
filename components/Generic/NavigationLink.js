@@ -21,6 +21,7 @@ export default function NavigationLink({ hideMenu, text, scrollTo, href, externa
 }
 
 const getLink = ({ url, external, text, ariaLabel, scrollTo }) => {
+  console.log('getLink', text, url, scrollTo)
   if (external) {
     return (
       <ExternalLink aria-label={(ariaLabel) ? ariaLabel : text} href={url}>
@@ -29,7 +30,7 @@ const getLink = ({ url, external, text, ariaLabel, scrollTo }) => {
     )
   } else {
     return (
-      <Link href={`${url}?scrollTo=${scrollTo}`} as={url}>
+      <Link href={{ pathname: url, query: { scrollTo } }} as={url}>
         <a aria-label={ariaLabel}>{text}</a>
       </Link>
     )

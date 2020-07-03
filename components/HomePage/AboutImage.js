@@ -18,7 +18,9 @@ export default function About({ transition, image }) {
         onAnimationComplete={setAnimationHasRun}
         className="w-full h-full relative">
         <img
-          src={`${process.env.BACKEND_URL}${image}`}
+          // src={`${process.env.BACKEND_URL}${image}`}
+          // src={require(image)}
+          src={require(`../../images/${image}`)}
           alt={`Picture of Ameira`}
           className="hidden md:block absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
         />

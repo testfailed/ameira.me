@@ -27,7 +27,12 @@ module.exports = {
         'img-tint': 'rgba(0, 0, 0, 0.7);',
       },
       textColor: {
-        'pink-custom': '#DBC8BE'
+        'pink-custom': '#DBC8BE',
+        'grey-custom': '#F7F7F7',
+      },
+      borderColor: {
+        'pink-custom': '#DBC8BE',
+        'grey-custom': '#F7F7F7',
       },
       backgroundOpacity: {
         '80': '0.8',

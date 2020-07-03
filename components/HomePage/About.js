@@ -13,8 +13,8 @@ const aboutText = [
   embracing a challenge.',
 ];
 
-const aboutImage = '/assets/home/ameira.jpg'
-const aboutImageMobile = '/assets/home/ameira-garden.jpg'
+const aboutImage = 'home/ameira.jpg'
+const aboutImageMobile = 'home/ameira-garden.jpg'
 
 const transition = {
   ease: 'easeOut',

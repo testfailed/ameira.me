@@ -32,7 +32,9 @@ export default function PortfolioItem(props) {
         onAnimationComplete={setAnimationHasRun}
         className="flex flex-col h-full"
       >
-        <div className="bg-center bg-cover h-50vh relative" style={{ backgroundImage: `url('${process.env.BACKEND_URL}/assets/portfolio/${image}')` }}>
+        {/* backgroundImage: `url('${require('./images/home/header-background.jpg')}')`, */}
+        {/* `url('${process.env.BACKEND_URL}/assets/portfolio/${image}')` */}
+        <div className="bg-center bg-cover h-50vh relative" style={{ backgroundImage: `url('${require(`../../images/portfolio/${image}`)}')` }}>
           <div className="absolute top-0 left-0 bg-img-tint h-full w-full flex justify-center items-center">
             <h4 className="text-2xl p-2 md:px-16 font-title text-center text-white">{title}</h4>
           </div>
@@ -43,7 +45,7 @@ export default function PortfolioItem(props) {
           </p>
           <p className="text-base md:text-lg font-body p-4 md:px-6 lg:px-8">{description}</p>
           <p className="text-base md:text-lg font-body p-4 md:px-6 lg:px-8">'{excerpt}'</p>
-          <ReadMore slug={slug} className="md:absolute md:bottom-0 md:mb-16" />
+          <ReadMore slug={slug} className="md:absolute md:bottom-0 md:mb-16 border-pink-custom text-pink-custom hover:text-grey-custom hover:bg-pink-custom" />
         </div>
       </motion.div>
     </div>

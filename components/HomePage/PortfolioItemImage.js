@@ -13,7 +13,8 @@ export default function PortfolioItemText(props) {
           variants={variants}
           transition={transition}
           onAnimationComplete={setAnimationHasRun}
-          src={`${process.env.BACKEND_URL}/assets/portfolio/${image}`}
+          // src={`${process.env.BACKEND_URL}/assets/portfolio/${image}`}
+          src={require(`../../images/portfolio/${image}`)}
           alt={`Cover Image for ${title}`}
           className="w-full object-cover h-full md:max-h-p-item"
         />

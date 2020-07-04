@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useMedia } from 'react-use';
 import EmailLink from './EmailLink'
 import NavigationLink from './NavigationLink'
 import SocialIcons from './SocialIcons'
 import Hamburger from './Hamburger'
 import Cross from './Cross'
 import { useIsMobile } from '../../hooks/useIsMobile'
+import { useRouter } from 'next/router'
 
 export default function Navigation() {
   const links = [
     {
       text: 'Home',
+      scrollTo: 'hero',
       href: '/',
     },
     {
@@ -29,6 +30,9 @@ export default function Navigation() {
       external: true,
     }
   ]
+
+  const { query } = useRouter();
+  const { internalLink } = query;
 
   const [isOpen, setIsOpen] = useState(false);
   // Use isMobile to ensure that the navigation is always open in desktop
@@ -53,8 +57,9 @@ export default function Navigation() {
     <>
       <Hamburger onClick={openMenu} />
       <motion.nav
+        // If internal link, don't reanimate the nav bar
+        initial={internalLink ? false : 'closed'}
         animate={isMobile && !isOpen ? 'closed' : 'open'}
-        initial={'closed'}
         variants={variants}
         transition={transition}
         className={`flex fixed w-screen h-screen md:w-full md:h-auto justify-center items-center pt-8 pb-8 md:pr-12 text-lg z-50 font-nav flex-col-reverse md:flex-row bg-opacity-1 md:bg-opacity-0 bg-white`}>

@@ -23,7 +23,7 @@ const getLink = ({ url, external, text, ariaLabel, scrollTo }) => {
     )
   } else {
     return (
-      <Link href={{ pathname: url, query: { scrollTo } }} as={url}>
+      <Link href={{ pathname: url, query: { scrollTo, internalLink: true } }} as={url}>
         <a aria-label={ariaLabel}>{text}</a>
       </Link>
     )

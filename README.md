@@ -1,73 +1,49 @@
-# A statically generated blog example using Next.js and Markdown
+<h1 align="center">Welcome to ameira.me 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Travis Build" src="https://travis-ci.com/james-wallis/ameira.me.svg?token=DMsS4JoCUSe88oxSzNdL&branch=master" />
+  <a href="#" target="_blank">
+    <img alt="License: Apache License 2.0" src="https://img.shields.io/badge/License-Apache License 2.0-yellow.svg" />
+  </a>
+</p>
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using markdown files as the data source.
+> Website for Ameira Yanni - Aspiring actor and copywriter
 
-The blog posts are stored in `/_posts` as markdown files with front matter support. Adding a new markdown file in there will create a new blog post.
+### 🏠 [Homepage](ameira.me)
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+## Details
+* Written in React.js with [Next.js](https://nextjs.org/) to generate static files.
+* Markdown files are rendered as HTML using [gray-matter](https://github.com/jonschlinkert/gray-matter) at build time to form the *[portfolio](ameira.me/portfolio)* page.
+* [Framer Motion](https://www.framer.com/motion/) for animations.
+* [Tailwind CSS](https://tailwindcss.com/) to manage styling.
+* Hosted on Github pages, Travis-ci to build *master* and push to *gh-pages*.
 
-## Demo
 
-[https://next-blog-starter.now.sh/](https://next-blog-starter.now.sh/)
+## Install
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?c=1&s=https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
-
-### Related examples
-
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example blog-starter blog-starter-app
-# or
-yarn create next-app --example blog-starter blog-starter-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/vercel/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/blog-starter
-cd blog-starter
-```
-
-Install dependencies and run the example:
-
-```bash
+```sh
 npm install
-npm run dev
-
-# or
-
-yarn install
-yarn dev
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+## Usage
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+```sh
+npm run dev
+```
 
-# Notes
+## Run tests
 
-This blog-starter uses [Tailwind CSS](https://tailwindcss.com). To control the generated stylesheet's filesize, this example uses Tailwind CSS' v1.4 [`purge` option](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to remove unused CSS.
+```sh
+npm run test
+```
+
+## Author
+
+👤 **James Wallis**
+
+* Website: wallis.dev
+* Github: [@james-wallis](https://github.com/james-wallis)
+* LinkedIn: [@jamesemwallis](https://linkedin.com/in/jamesemwallis)
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

@@ -3,12 +3,12 @@ import * as Scroll from 'react-scroll';
 import { useRouter } from 'next/router';
 import ExternalLink from './ExternalLink'
 
-export default function NavigationLink({ hideMenu, text, scrollTo, href, external, ariaLabel }) {
+export default function NavigationLink({ closeMenu, text, scrollTo, href, external, ariaLabel }) {
   const url = `${process.env.BACKEND_URL}${href}`;
   const { pathname } = useRouter();
-  const children = (scrollTo && (href === pathname)) ? getScrollLink({ text, scrollTo, hideMenu }) : getLink({ text, url, external, ariaLabel, scrollTo });
+  const children = (scrollTo && (href === pathname)) ? getScrollLink({ text, scrollTo, closeMenu }) : getLink({ text, url, external, ariaLabel, scrollTo });
   return (
-    <li onClick={hideMenu} className="inline-block py-3 md:py-0 px-3 tracking-wider cursor-pointer">
+    <li onClick={closeMenu} className="inline-block py-3 md:py-0 px-3 tracking-wider cursor-pointer">
       {children}
     </li>
   )
@@ -30,9 +30,9 @@ const getLink = ({ url, external, text, ariaLabel, scrollTo }) => {
   }
 }
 
-const getScrollLink = ({ text, scrollTo, hideMenu }) => {
+const getScrollLink = ({ text, scrollTo, closeMenu }) => {
   return (
-    <Scroll.Link to={scrollTo} spy={true} smooth={true} duration={500} onSetActive={hideMenu}>
+    <Scroll.Link to={scrollTo} spy={true} smooth={true} duration={500} onSetActive={closeMenu}>
       {text}
     </Scroll.Link>
   )

@@ -20,7 +20,6 @@ export default function AboutText({ transition, image, content }) {
       >
         <h2 className="text-6xl font-title mb-2 md:mb-0">About Me</h2>
         <img
-          // src={`${process.env.BACKEND_URL}${image}`}
           src={require(`../../images/${image}`)}
           alt={`Cover Image for`}
           className="md:hidden object-cover mb-2 md:mb-2"

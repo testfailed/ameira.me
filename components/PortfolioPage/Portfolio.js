@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import PortfolioItem from './PortfolioItem'
+import { calculateNumItemsOnRow } from '../../lib/utils'
 
 export default function Portfolio({ articles }) {
   const [numItemsOnRow, setNumItemsOnRow] = useState(0);
@@ -18,16 +19,4 @@ export default function Portfolio({ articles }) {
       </div>
     </section>
   )
-}
-
-const calculateNumItemsOnRow = (windowWidth) => {
-  if (windowWidth >= 1024) {
-    return 3
-  }
-
-  if (windowWidth >= 768) {
-    return 2
-  }
-
-  return 1
 }

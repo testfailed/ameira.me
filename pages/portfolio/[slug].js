@@ -1,15 +1,15 @@
-import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Container from '../../components/Generic/Container'
-import Layout from '../../components/Generic/layout'
-import { getPortfolioBySlug, getCompletePortfolio } from '../../lib/api'
-import markdownToHtml from '../../lib/markdownToHtml'
-import Article from '../../components/PortfolioSlugPage/Article'
+import { useRouter } from 'next/router';
+import ErrorPage from 'next/error';
+import Container from '../../components/Generic/Container';
+import Layout from '../../components/Generic/layout';
+import { getPortfolioBySlug, getCompletePortfolio } from '../../lib/api';
+import markdownToHtml from '../../lib/markdownToHtml';
+import Article from '../../components/PortfolioSlugPage/Article';
 
-export default function Post({ post, morePosts, preview }) {
-  const router = useRouter()
+export default function Post({ post }) {
+  const router = useRouter();
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} />;
   }
   return (
     <Layout>
@@ -17,11 +17,13 @@ export default function Post({ post, morePosts, preview }) {
         {router.isFallback ? (
           <p>Loading...</p>
         ) : (
+          // Pass entire post to article
+          // eslint-disable-next-line react/jsx-props-no-spreading
           <Article {...post} />
         )}
       </Container>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ params }) {
@@ -31,8 +33,8 @@ export async function getStaticProps({ params }) {
     'slug',
     'content',
     'image',
-  ])
-  const content = await markdownToHtml(post.content || '')
+  ]);
+  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {
@@ -41,20 +43,18 @@ export async function getStaticProps({ params }) {
         content,
       },
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const posts = getCompletePortfolio(['slug'])
+  const posts = getCompletePortfolio(['slug']);
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
-  }
+  };
 }

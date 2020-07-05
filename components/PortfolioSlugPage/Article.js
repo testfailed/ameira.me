@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import DateFormatter from '../Generic/DateFormatter'
-import PrintMarkdownHTML from '../Generic/PrintMarkdownHTML'
+import Head from 'next/head';
+import Link from 'next/link';
+import DateFormatter from '../Generic/DateFormatter';
+import PrintMarkdownHTML from '../Generic/PrintMarkdownHTML';
 
-export default function Article({ title, image, date, content }) {
+export default function Article({
+  title, image, date, content,
+}) {
   const imgSrc = require(`../../images/portfolio/${image}`);
   return (
     <article className="flex flex-col items-center justify-center text-center pt-6 md:pt-32">
@@ -13,7 +15,7 @@ export default function Article({ title, image, date, content }) {
       </Head>
       <img
         src={imgSrc}
-        alt={`Image for ${title}`}
+        alt={title}
         className="md:h-50vh"
       />
       <h1 className="text-4xl md:text-6xl font-title text-pink-custom mt-4 md:mt-16 mb-4">{title}</h1>
@@ -27,5 +29,5 @@ export default function Article({ title, image, date, content }) {
         </a>
       </Link>
     </article>
-  )
+  );
 }

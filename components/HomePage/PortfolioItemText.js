@@ -1,15 +1,17 @@
-import Link from 'next/link'
-import DateFormatter from '../Generic/DateFormatter'
-import { motion } from "framer-motion"
-import { useAnimationOnScroll } from '../../hooks/useAnimationOnScroll'
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import DateFormatter from '../Generic/DateFormatter';
+import useAnimationOnScroll from '../../hooks/useAnimationOnScroll';
 
 export default function PortfolioItemText(props) {
-  const { title, date, description, excerpt, transition, variants } = props;
+  const {
+    title, date, description, excerpt, transition, variants,
+  } = props;
   const [viewRef, animate, setAnimationHasRun] = useAnimationOnScroll('show');
   return (
     <div ref={viewRef} className="w-full text-center flex">
       <motion.div
-        initial={'hideText'}
+        initial="hideText"
         animate={animate}
         variants={variants}
         transition={transition}
@@ -21,7 +23,11 @@ export default function PortfolioItemText(props) {
           <DateFormatter dateString={date} />
         </p>
         <p className="text-base md:text-lg m-2 md:mx-8 md:my-4 font-body">{description}</p>
-        <p className="text-base md:text-lg m-2 md:mx-8 md:my-4 font-body">'{excerpt}'</p>
+        <p className="text-base md:text-lg m-2 md:mx-8 md:my-4 font-body">
+          &apos;
+          {excerpt}
+          &apos;
+        </p>
         <Link href={`${process.env.BACKEND_URL}/portfolio`}>
           <a className="px-4 py-2 mt-6 md:mt-8 border-solid border border-black font-body text-base hover:bg-black hover:text-pink-custom ease-in-out transition duration-500">
             Go to Portfolio
@@ -29,5 +35,5 @@ export default function PortfolioItemText(props) {
         </Link>
       </motion.div>
     </div>
-  )
+  );
 }

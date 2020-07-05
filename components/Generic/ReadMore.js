@@ -1,5 +1,5 @@
+import Link from 'next/link';
 
-import Link from 'next/link'
 export default function ReadMore({ slug, className: propClasses }) {
   return (
     <Link as={`${process.env.BACKEND_URL}/portfolio/${slug}`} href={`${process.env.BACKEND_URL}/portfolio/[slug]`}>
@@ -7,5 +7,5 @@ export default function ReadMore({ slug, className: propClasses }) {
         Read more
       </a>
     </Link>
-  )
+  );
 }

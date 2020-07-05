@@ -3,20 +3,20 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        'overlap': '110%',
-        '14': '3.5rem',
+        overlap: '110%',
+        14: '3.5rem',
         '33%': '33%',
         '50%': '50%',
         '90vw': '90vw',
         '95vw': '95vw',
       },
       maxWidth: {
-        'overlap': '110%',
+        overlap: '110%',
       },
       height: {
         overlap: '110%',
         'p-item': '60vh',
-        '14': '3.5rem',
+        14: '3.5rem',
         '50vh': '50vh',
       },
       minHeight: {
@@ -37,9 +37,9 @@ module.exports = {
         'grey-custom': '#F7F7F7',
       },
       backgroundOpacity: {
-        '80': '0.8',
-        '90': '0.9',
-        'nav': '0.95',
+        80: '0.8',
+        90: '0.9',
+        nav: '0.95',
       },
       colors: {
         'accent-1': '#FAFAFA',
@@ -77,4 +77,4 @@ module.exports = {
       body: 'Raleway, serif',
     },
   },
-}
+};

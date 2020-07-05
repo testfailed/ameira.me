@@ -1,4 +1,6 @@
-export default function ExternalLink({ href, className, style, children }) {
+export default function ExternalLink({
+  href, className, style, children,
+}) {
   return (
     <a
       target="_blank"
@@ -9,5 +11,5 @@ export default function ExternalLink({ href, className, style, children }) {
     >
       {children}
     </a>
-  )
+  );
 }

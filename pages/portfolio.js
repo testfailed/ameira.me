@@ -1,8 +1,7 @@
-import Layout from '../components/Generic/layout'
-import { getCompletePortfolio } from '../lib/api'
-import Head from 'next/head'
-import Portfolio from '../components/PortfolioPage/Portfolio'
-
+import Head from 'next/head';
+import Layout from '../components/Generic/layout';
+import { getCompletePortfolio } from '../lib/api';
+import Portfolio from '../components/PortfolioPage/Portfolio';
 
 export default function Index({ articles }) {
   return (
@@ -21,7 +20,7 @@ export default function Index({ articles }) {
       </div>
       <Portfolio articles={articles} />
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
@@ -33,9 +32,9 @@ export async function getStaticProps() {
     'image',
     'excerpt',
     'description',
-  ])
+  ]);
 
   return {
     props: { articles },
-  }
+  };
 }

@@ -14,7 +14,7 @@
 
 ## Details
 * Written in React.js with [Next.js](https://nextjs.org/) to generate static files.
-* Markdown files are rendered as HTML using [gray-matter](https://github.com/jonschlinkert/gray-matter) at build time to form the *[portfolio](ameira.me/portfolio)* page.
+* Markdown files are rendered as HTML using [gray-matter](https://github.com/jonschlinkert/gray-matter) and [remark](https://github.com/remarkjs/remark) at build time to form the *[portfolio](ameira.me/portfolio)* page.
 * [Framer Motion](https://www.framer.com/motion/) for animations.
 * [Tailwind CSS](https://tailwindcss.com/) to manage styling.
 * Hosted on Github pages, Travis-ci to build *master* and push to *gh-pages*.

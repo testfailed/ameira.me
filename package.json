@@ -6,7 +6,9 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "test": "jest",
+    "test:codecov": "jest && codecov"
   },
   "dependencies": {
     "classnames": "2.2.6",
@@ -30,11 +32,25 @@
     "tailwindcss": "^1.4.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.4",
+    "codecov": "^3.7.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.5"
+    "eslint-plugin-react-hooks": "^4.0.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.1.0"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   }
 }

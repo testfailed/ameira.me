@@ -12,11 +12,27 @@ export default function Portfolio({ articles }) {
   return (
     <section>
       <div className="flex flex-row flex-wrap justify-center flex-1">
-        {articles.map((article, index) => {
-          const { title } = article;
+        {articles.map(({
+          image,
+          title,
+          date,
+          description,
+          excerpt,
+          slug,
+        }, index) => {
           const onTopRow = index < numItemsOnRow;
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          return <PortfolioItem key={`portfolio-item-${title}`} onTopRow={onTopRow} {...article} />;
+          return (
+            <PortfolioItem
+              key={`portfolio-item-${title}`}
+              onTopRow={onTopRow}
+              title={title}
+              image={image}
+              date={date}
+              description={description}
+              excerpt={excerpt}
+              slug={slug}
+            />
+          );
         })}
       </div>
     </section>

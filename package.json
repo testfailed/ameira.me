@@ -46,10 +46,6 @@
     "jest": "^26.1.0"
   },
   "jest": {
-    "coverageReporters": [
-      "text",
-      "html"
-    ],
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
     "moduleNameMapper": {

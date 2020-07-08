@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { animateScroll as scroller } from 'react-scroll';
-import Footer from './footer';
+import Footer from './Footer';
 import Navigation from './Navigation';
 
 const scrollToElement = (id) => {

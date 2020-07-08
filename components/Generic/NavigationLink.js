@@ -8,14 +8,14 @@ const getLink = ({
 }) => {
   if (external) {
     return (
-      <ExternalLink aria-label={(ariaLabel) || text} href={url}>
+      <ExternalLink aria-label={ariaLabel || text} href={url}>
         {text}
       </ExternalLink>
     );
   }
   return (
     <Link href={{ pathname: url, query: { scrollTo, internalLink: true } }} as={url}>
-      <a aria-label={ariaLabel}>{text}</a>
+      <a aria-label={ariaLabel || text}>{text}</a>
     </Link>
   );
 };
@@ -37,8 +37,7 @@ export default function NavigationLink({
       text, url, external, ariaLabel, scrollTo,
     });
   return (
-    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-    <li onClick={closeMenu} className="inline-block py-3 md:py-0 px-3 tracking-wider cursor-pointer">
+    <li onClick={closeMenu} role="menuitem" className="inline-block py-3 md:py-0 px-3 tracking-wider cursor-pointer">
       {children}
     </li>
   );

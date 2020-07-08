@@ -6,7 +6,7 @@ const variants = {
   show: { x: 0, opacity: 1 },
 };
 
-export default function About({ transition, image }) {
+export default function AboutImage({ transition, image }) {
   const [viewRef, animate, setAnimationHasRun] = useAnimationOnScroll('show');
   return (
     <div ref={viewRef} className="w-full">
@@ -22,6 +22,7 @@ export default function About({ transition, image }) {
           src={require(`../../images/${image}`)}
           alt="Ameira"
           className="hidden md:block absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
+          data-testid="about-image"
         />
       </motion.div>
     </div>

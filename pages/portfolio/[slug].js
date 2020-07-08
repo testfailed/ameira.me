@@ -11,15 +11,19 @@ export default function Post({ post }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+  const {
+    title,
+    image,
+    date,
+    content,
+  } = post;
   return (
     <Layout>
       <Container>
         {router.isFallback ? (
           <p>Loading...</p>
         ) : (
-          // Pass entire post to article
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          <Article {...post} />
+          <Article title={title} image={image} date={date} content={content} />
         )}
       </Container>
     </Layout>

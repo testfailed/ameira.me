@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    id="about"
+  >
+    <div
+      class="flex w-full my-0 md:py-32 flex-col md:flex-row"
+    >
+      <div
+        class="w-full"
+      >
+        <div
+          class="w-full h-full relative"
+          style="opacity: 0; transform: translateX(-700px) translateZ(0);"
+        >
+          <img
+            alt="Ameira"
+            class="hidden md:block absolute z-0 object-cover w-overlap h-overlap max-w-overlap"
+            data-testid="about-image"
+            src="test-file-stub"
+          />
+        </div>
+      </div>
+      <div
+        class="w-full z-10 pb-10"
+      >
+        <div
+          class="pt-12 mt-5 md:mt-12 w-full bg-grey-custom px-10 pb-10 h-full z-10"
+          style="opacity: 0; transform: translateX(700px) translateZ(0);"
+        >
+          <h2
+            class="text-6xl font-title mb-2 md:mb-0"
+          >
+            About Me
+          </h2>
+          <img
+            alt="Ameira"
+            class="md:hidden object-cover mb-2 md:mb-2"
+            src="test-file-stub"
+          />
+          <p
+            class="py-2 md:py-4 leading-loose font-body"
+          >
+            I have been a tour guide, a terrible waitress and a children’s party entertainer.   I went to university in Bristol, a hub for the arts, and was a member of an improvised   comedy variety show called The Bish Bosh Bash. We once improvised a musical about courgettes   falling in love, a true highlight in my improvising career.
+          </p>
+          <p
+            class="py-2 md:py-4 leading-loose font-body"
+          >
+            I am a trained actress and writer. My passion lies with the arts,   so I always add a creative flair to everything I do. Having written   short stories, reviews, blog posts, plays and poems, I thrive when   embracing a challenge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

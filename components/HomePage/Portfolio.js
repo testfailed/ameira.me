@@ -7,12 +7,21 @@ export default function Portfolio({ articles }) {
       <div className="flex flex-col items-center w-full mt-16 md:mt-32 mb-0 md:mb-16 font-title">
         <h3 className="text-7xl">Portfolio</h3>
         <p className="text-lg my-8">Past. Present. Future.</p>
-        {[newestArticle].map((article, index) => (
+        {[newestArticle].map(({
+          title,
+          image,
+          date,
+          description,
+          excerpt,
+        }, index) => (
           <PortfolioItem
-            key={`portfolio-item-${article.title}`}
+            key={`portfolio-item-${title}`}
             invert={index % 2 === 1}
-            // eslint-disable-next-line react/jsx-props-no-spreading
-            {...article}
+            title={title}
+            image={image}
+            date={date}
+            description={description}
+            excerpt={excerpt}
           />
         ))}
       </div>

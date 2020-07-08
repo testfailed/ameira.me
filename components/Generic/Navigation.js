@@ -62,6 +62,7 @@ export default function Navigation() {
         animate={isMobile && !isOpen ? 'closed' : 'open'}
         variants={variants}
         transition={transition}
+        role="menubar"
         className="flex fixed w-screen h-screen md:w-full md:h-auto justify-center items-center pt-8 pb-8 md:pr-12 text-lg z-50 font-nav flex-col-reverse md:flex-row bg-opacity-1 md:bg-opacity-0 bg-white"
       >
         <Cross onClick={closeMenu} />

@@ -4,9 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
-env:
-  - NODE_ENV=production
 script:
+  - npm run eslint
+  - npm run test
   - npm run build
   - npm run export
   - touch out/.nojekyll

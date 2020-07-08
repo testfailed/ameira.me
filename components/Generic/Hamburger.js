@@ -7,9 +7,10 @@ export default function Hamburger({ onClick }) {
   }
 
   return (
-    // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <div
       onClick={onClick}
+      role="button"
+      tabIndex={0}
       className="fixed md:hidden z-50 h-14 w-14 top-0 right-0 m-4 bg-opacity-nav bg-white flex flex-col justify-center items-center"
     >
       {hamburger}

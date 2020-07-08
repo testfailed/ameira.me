@@ -11,7 +11,7 @@ export default function Hamburger({ onClick }) {
       onClick={onClick}
       role="button"
       tabIndex={0}
-      className="fixed md:hidden z-50 h-14 w-14 top-0 right-0 m-4 bg-opacity-nav bg-white flex flex-col justify-center items-center"
+      className="fixed md:hidden z-50 h-14 w-14 top-0 right-0 m-4 bg-opacity-nav bg-white flex flex-col justify-center items-center outline-none"
     >
       {hamburger}
     </div>

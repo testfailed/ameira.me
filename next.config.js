@@ -11,5 +11,6 @@ module.exports = withPlugins([
   assetPrefix: isProd ? '' : '',
   env: {
     BACKEND_URL: isProd ? '' : '',
+    GTAG: process.env.GTAG,
   },
 });

@@ -1,13 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-// import * as nextRouter from 'next/router';
 import * as reactIntersectionObserver from 'react-intersection-observer';
-import * as reactUse from 'react-use';
 
 import About from '../../HomePage/About';
 
-reactUse.useMedia = jest.fn();
+jest.mock('react-use');
 reactIntersectionObserver.useInView = jest.fn().mockReturnValue([]);
 
 describe('About', () => {

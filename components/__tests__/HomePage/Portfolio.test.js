@@ -3,12 +3,11 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import * as nextRouter from 'next/router';
 import * as reactIntersectionObserver from 'react-intersection-observer';
-import * as reactUse from 'react-use';
 
 import Portfolio from '../../HomePage/Portfolio';
 
+jest.mock('react-use');
 nextRouter.useRouter = jest.fn();
-reactUse.useMedia = jest.fn();
 reactIntersectionObserver.useInView = jest.fn().mockReturnValue([]);
 
 nextRouter.useRouter.mockImplementation(() => ({ route: '/', query: {} }));

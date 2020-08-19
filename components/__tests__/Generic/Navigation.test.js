@@ -2,12 +2,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import * as nextRouter from 'next/router';
-import * as reactUse from 'react-use';
 
 import Navigation from '../../Generic/Navigation';
 
+jest.mock('react-use');
 nextRouter.useRouter = jest.fn();
-reactUse.useMedia = jest.fn();
 
 nextRouter.useRouter.mockImplementation(() => ({ route: '/', query: {} }));
 

@@ -52,7 +52,7 @@ exports[`Portfolio renders and matches snapshot 1`] = `
             </p>
             <a
               class="px-4 py-2 mt-6 md:mt-8 border-solid border border-black font-body text-base hover:bg-black hover:text-pink-custom ease-in-out transition duration-500"
-              href="undefined/portfolio"
+              href="/portfolio?internalLink=true"
             >
               Go to Portfolio
             </a>

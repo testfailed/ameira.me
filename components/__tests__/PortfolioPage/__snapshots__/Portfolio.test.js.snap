@@ -51,7 +51,7 @@ exports[`Hero renders and matches snapshot 1`] = `
             </p>
             <a
               class="px-4 py-2 mt-6 md:mt-8 border-solid border border-black font-body text-base ease-in-out transition duration-500 md:absolute md:bottom-0 md:mb-16 border-pink-custom text-pink-custom hover:text-grey-custom hover:bg-pink-custom"
-              href="undefined/portfolio/slug"
+              href="/portfolio/slug"
             >
               Read more
             </a>
@@ -103,7 +103,7 @@ exports[`Hero renders and matches snapshot 1`] = `
             </p>
             <a
               class="px-4 py-2 mt-6 md:mt-8 border-solid border border-black font-body text-base ease-in-out transition duration-500 md:absolute md:bottom-0 md:mb-16 border-pink-custom text-pink-custom hover:text-grey-custom hover:bg-pink-custom"
-              href="undefined/portfolio/slug"
+              href="/portfolio/slug"
             >
               Read more
             </a>

@@ -29,7 +29,7 @@ const getScrollLink = ({ text, scrollTo, closeMenu }) => (
 export default function NavigationLink({
   closeMenu, text, scrollTo, href, external, ariaLabel,
 }) {
-  const url = `${process.env.BACKEND_URL}${href}`;
+  const url = href;
   const { pathname } = useRouter();
   const children = (scrollTo && (href === pathname))
     ? getScrollLink({ text, scrollTo, closeMenu })

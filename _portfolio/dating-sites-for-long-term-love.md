@@ -1,9 +1,12 @@
 ---
 title: "Dating Sites: The New Norm For Long-Term Love?"
-description: "A research project inspired by life in lockdown."
-excerpt: "We are currently amidst a global pandemic, and the only place people can go to find love is the internet. Your next swipe could be your soulmate."
-image: "online-dating.jpg"
-date: "2020-08-25T00:00:00"
+description: A research project inspired by life in lockdown.
+excerpt: We are currently amidst a global pandemic, and the only place people
+  can go to find love is the internet. Your next swipe could be your soulmate.
+date: 2020-08-25T00:00:00
+image: online-dating.jpg
+tags:
+  - article
 ---
 With almost every aspect of our lives going virtual, the rise in popularity for dating sites is hardly surprising. But, is it the new norm for young adults to form long-term relationships? 
 

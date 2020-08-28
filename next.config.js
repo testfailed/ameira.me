@@ -9,13 +9,4 @@ module.exports = withPlugins([
   env: {
     GTAG: process.env.GTAG,
   },
-  async redirects() {
-    return [
-      {
-        source: '/github',
-        destination: 'https://github.com/james-wallis/ameira.me',
-        permanent: false,
-      },
-    ];
-  },
 });

@@ -3,7 +3,7 @@ title: "Diving back in: The Bish Bosh Bash"
 description: A blog post for the Bristol Improv Theatre
 excerpt: It's all about not being scared to look like an idiot on stage, because
   at the end of the day, that's usually the best thing to do
-date: 2019-10-10T00:00:00
+date: 2019-10-10T00:00
 image: bish-bosh-bash.jpg
 tags:
   - improv

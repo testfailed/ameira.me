@@ -1,10 +1,14 @@
 ---
 title: "Diving back in: The Bish Bosh Bash"
-description: "A blog post for the Bristol Improv Theatre"
-excerpt: "It's all about not being scared to look like an idiot on stage, because at the end of the day, that's usually the best thing to do"
-image: "bish-bosh-bash.jpg"
-date: "2019-10-10T00:00:00"
-tags: ['improv', 'Bristol Improv Theatre']
+description: A blog post for the Bristol Improv Theatre
+excerpt: It's all about not being scared to look like an idiot on stage, because
+  at the end of the day, that's usually the best thing to do
+date: 2019-10-10T00:00:00
+image: bish-bosh-bash.jpg
+tags:
+  - improv
+  - Bristol Improv Theatre
+  - article
 ---
 
 As a drama student, acting is a huge part of my life, and becoming a part of The Bish Bosh Bash was an incredible opportunity that helped me to keep my love for acting going outside of university. Though, one thing I did not anticipate was how difficult it would be to have the whole summer (4 months!) away from improv and my Bish Bosh Bash family. It is so bizarre how I could go from being incredibly free and creative to working 40 hours a week all summer with no drama or improv around me whatsoever, and my God did the summer drag on! Now that I’ve had a taste of life with no improv, I don’t want to be without it ever again. Although, it was positive in a way because I found out just how impactful improv has been on my life, and how much I truly do feel at home when I am playing with all of the people in The Bish Bosh Bash.

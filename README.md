@@ -14,6 +14,7 @@
 
 ## Details
 * Written in React.js with [Next.js](https://nextjs.org/) to generate static files.
+* [Netlify CMS](https://www.netlifycms.org/) to give Ameira the ability to easily add, edit or delete an item from the portfolio.
 * Markdown files are rendered as HTML using [gray-matter](https://github.com/jonschlinkert/gray-matter) and [remark](https://github.com/remarkjs/remark) at build time to form the *[portfolio](ameira.me/portfolio)* page.
 * [Framer Motion](https://www.framer.com/motion/) for animations.
 * [Tailwind CSS](https://tailwindcss.com/) to manage styling.

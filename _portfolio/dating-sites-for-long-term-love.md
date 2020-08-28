@@ -3,7 +3,7 @@ title: "Dating Sites: The New Norm For Long-Term Love?"
 description: A research project inspired by life in lockdown.
 excerpt: We are currently amidst a global pandemic, and the only place people
   can go to find love is the internet. Your next swipe could be your soulmate.
-date: 2020-08-25T13:53:31.686Z
+date: 2020-08-25T15:08
 image: online-dating.jpg
 tags:
   - article

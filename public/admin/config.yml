@@ -2,7 +2,7 @@ backend:
   name: github
   repo: james-wallis/ameira.me
   branch: master
-  # name: test-repo
+publish_mode: editorial_workflow
 media_folder: "/images"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog

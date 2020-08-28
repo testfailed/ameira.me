@@ -3,7 +3,7 @@ title: "Album Review: Marsicans - Ursa Major"
 description: A commission for Only A Northern One.
 excerpt: Impeccably cements their sheer talent and individuality - each track
   unequivocally captures the sound and soul of the band.
-date: 2020-08-28T14:05:35.491Z
+date: 2020-08-20T15:05
 image: marsicans_group_shot.jpeg
 tags:
   - review

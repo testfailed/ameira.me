@@ -6,7 +6,7 @@ excerpt: "It's a no-brainer that negativity leads to negativity. But is
   gossiping at work actually impactful on our mental health, or is it harmless?
   "
 date: 2020-09-15T09:42
-image: /images/portfolio/shh.jpeg
+image: shh.jpeg
 tags:
   - article
   - blog

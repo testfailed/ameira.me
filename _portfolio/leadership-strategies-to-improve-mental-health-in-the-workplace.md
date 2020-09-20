@@ -4,7 +4,7 @@ description: A commission for Sparta Health.
 excerpt: The key is to allow yourself to be vulnerable, communicative, and
   positive. Like a ripple in the water, your employees will follow your lead.
 date: 2020-09-17T22:16
-image: /images/portfolio/leadership.jpg
+image: leadership.jpg
 tags:
   - article
   - blog

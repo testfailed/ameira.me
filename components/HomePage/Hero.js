@@ -22,27 +22,13 @@ const spanAnimation = {
   },
 };
 
-const createSubTitle = () => {
-  const titles = [{
-    id: 1,
-    text: 'copywriter',
-  },
-  {
-    id: 2,
-    span: true,
-  },
-  {
-    id: 3,
-    text: 'actor',
-  },
-  {
-    id: 4,
-    span: true,
-  },
-  {
-    id: 5,
-    text: 'creative',
-  }];
+const renderTagline = (tagline) => {
+  const titles = [];
+  tagline.forEach((text, index) => {
+    titles.push({ id: index, text });
+    if (index + 1 < tagline.length) titles.push({ id: index, span: true });
+  });
+
   return titles.map(({ id, text, span }) => {
     if (span) {
       return <motion.span key={`subtitle-span-${id}`} variants={spanAnimation} className="rounded-full inline-block h-2 w-2 mx-2 mt-1 bg-black" />;
@@ -51,13 +37,10 @@ const createSubTitle = () => {
   });
 };
 
-export default function Hero() {
+export default function Hero({ title, tagline, backgroundImage }) {
   const isMobile = useIsMobile();
-  const subTitle = createSubTitle();
-  // eslint-disable-next-line import/no-unresolved
-  const desktopImage = require('../../images/home/header-background.jpg?resize&size=2000');
-  // eslint-disable-next-line import/no-unresolved
-  const mobileImage = require('../../images/home/header-background.jpg?resize&size=1000');
+  const desktopImage = require(`../../images/home/${backgroundImage}?resize&size=2000`);
+  const mobileImage = require(`../../images/home/${backgroundImage}?resize&size=1000`);
   const image = isMobile ? mobileImage : desktopImage;
   return (
     <section id="hero">
@@ -67,14 +50,14 @@ export default function Hero() {
           backgroundImage: `url('${image}')`,
         }}
       >
-        <h1 className="text-center text-7xl block">Ameira Yanni</h1>
+        <h1 className="text-center text-7xl block">{title}</h1>
         <motion.p
           variants={paragraphAnimation}
           initial="hidden"
           animate="visible"
           className="block mt-5 mb-20 flex items-center text-xl"
         >
-          {subTitle}
+          {renderTagline(tagline)}
         </motion.p>
       </div>
     </section>

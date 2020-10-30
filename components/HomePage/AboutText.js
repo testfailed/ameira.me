@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import useAnimationOnScroll from '../../hooks/useAnimationOnScroll';
+import PrintMarkdownHTML from '../Generic/PrintMarkdownHTML';
 
 const variants = {
   hide: { x: 700, opacity: 0 },
@@ -26,7 +27,7 @@ export default function AboutText({ transition, image, content }) {
           alt="Ameira"
           className="md:hidden object-cover mb-2 md:mb-2"
         />
-        {content.map((paragraph) => <p className="py-2 md:py-4 leading-loose font-body" key={`about-paragraph-${paragraph.substring(0, 10)}`}>{paragraph}</p>)}
+        <PrintMarkdownHTML content={content} about />
       </motion.div>
     </div>
   );

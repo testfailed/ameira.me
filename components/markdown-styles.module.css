@@ -42,3 +42,13 @@
     height: 300px;
   }
 }
+
+.about p {
+  @apply py-2 leading-loose font-body;
+}
+
+@media (min-width: 768px) {
+  .about p {
+    @apply py-4;
+  }
+}

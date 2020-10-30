@@ -4,9 +4,18 @@ import Layout from '../components/Generic/layout';
 import Hero from '../components/HomePage/Hero';
 import About from '../components/HomePage/About';
 import Portfolio from '../components/HomePage/Portfolio';
-import { getCompletePortfolio } from '../lib/api';
+import { getHomePage, getCompletePortfolio } from '../lib/api';
+import markdownToHtml from '../lib/markdownToHtml';
 
-export default function Index({ articles }) {
+export default function Index({ home, articles }) {
+  const {
+    title,
+    tagline,
+    heroBackgroundImage,
+    content,
+    aboutImageDesktop,
+    aboutImageMobile,
+  } = home;
   return (
     <>
       <NextSeo
@@ -18,9 +27,13 @@ export default function Index({ articles }) {
         }}
       />
       <Layout>
-        <Hero />
+        <Hero title={title} tagline={tagline} backgroundImage={heroBackgroundImage} />
         <Container>
-          <About />
+          <About
+            content={content}
+            desktopImage={aboutImageDesktop}
+            mobileImage={aboutImageMobile}
+          />
           <Portfolio articles={articles} />
         </Container>
       </Layout>
@@ -29,6 +42,9 @@ export default function Index({ articles }) {
 }
 
 export async function getStaticProps() {
+  const home = getHomePage();
+  const content = await markdownToHtml(home.content || '');
+
   const articles = getCompletePortfolio([
     'title',
     'date',
@@ -39,6 +55,12 @@ export async function getStaticProps() {
   ]);
 
   return {
-    props: { articles },
+    props: {
+      home: {
+        ...home,
+        content,
+      },
+      articles,
+    },
   };
 }

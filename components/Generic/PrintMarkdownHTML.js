@@ -1,9 +1,9 @@
 import markdownStyles from '../markdown-styles.module.css';
 
-export default function PrintMarkdownHTML({ content }) {
+export default function PrintMarkdownHTML({ content, about }) {
   return (
     <div
-      className={markdownStyles.markdown}
+      className={about ? markdownStyles.about : markdownStyles.markdown}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: content }}
     />

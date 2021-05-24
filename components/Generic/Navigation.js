@@ -78,7 +78,7 @@ export default function Navigation() {
                 external={external}
               />
             ))}
-            <li className="inline-block py-3 md:py-0 px-1 border-l-2 border-pink-100">
+            <li className="inline-block py-3 md:py-0 px-1 md:border-l-2 border-pink-100">
               <SocialIcons />
             </li>
           </ul>

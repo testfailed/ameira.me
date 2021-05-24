@@ -71,7 +71,7 @@ export default function Navigation() {
             }) => (
               <NavigationLink
                 key={`nav-link-${text}`}
-                hideMenu={closeMenu}
+                closeMenu={closeMenu}
                 text={text}
                 href={href}
                 scrollTo={scrollTo}

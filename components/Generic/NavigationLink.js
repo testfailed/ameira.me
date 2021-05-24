@@ -21,7 +21,7 @@ const getLink = ({
 };
 
 const getScrollLink = ({ text, scrollTo, closeMenu }) => (
-  <Scroll.Link to={scrollTo} spy smooth duration={500} onSetActive={closeMenu}>
+  <Scroll.Link to={scrollTo} spy smooth duration={500} onClick={closeMenu}>
     {text}
   </Scroll.Link>
 );

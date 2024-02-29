@@ -2,7 +2,7 @@ repo_name: todaypp/ameira.me
 report_id: 55280931d2750e94900f87035703ab56
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-23T13:15:03+00:00'
+timestamp: '2024-02-29T19:33:57+00:00'
 requested_by: james-wallis
 provider: github
 branch: master
@@ -30,7 +30,7 @@ tools:
   detection_source_url: https://github.com/todaypp/ameira.me
   detection_source: Repo Metadata
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 10.2.2
   open_source: true
